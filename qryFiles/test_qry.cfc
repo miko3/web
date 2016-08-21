@@ -1,9 +1,11 @@
 <cfcomponent>
 	<!--- テーブルからレコードを取得する --->
 	<cffunction name="getState" returnformat="json" access="remote">
+		<cfargument name="state" type="numeric" required="true">
 		<cfquery name="getQ" datasource="testdb">
 			SELECT id, name, state
 			  FROM flowstate
+			 WHERE state=<cfqueryparam value="#state#" cfsqltype="cf_sql_integer">
 		</cfquery>
 		<cfreturn getQ>
 		<cfdump var="#getQ#">

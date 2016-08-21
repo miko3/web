@@ -1,5 +1,5 @@
 <form>
-	<table class="table table-striped">
+	<table class="table table-striped tableTab2">
 		<thead class="thead-inverse">
 			<tr>
 				<td  id="checkAll">
@@ -10,12 +10,7 @@
 				<td>state</td>
 			</tr>
 		</thead>
-		<tbody id="dispTable">
-
-			<script type="text/javascript">
-				getQry();
-			</script>
-
+		<tbody>
 		</tbody>
 	</table>
 

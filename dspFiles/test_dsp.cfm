@@ -6,10 +6,10 @@
     		<li><a href="#tabs-3">Tab3</a></li>
   	</ul>
   	<div id="tabs-1">
-  		<cfinclude template="../tabFiles/tab1.cfm">
+  		<cfinclude template="tabFiles/tab1.cfm">
   	</div>
   	<div id="tabs-2">
-  		<p>afasf</p>
+  		<cfinclude template="tabFiles/tab2.cfm">
   	</div>
   	<div id="tabs-3">
   		<p>afasf</p>
