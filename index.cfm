@@ -6,12 +6,6 @@
 	<cfinclude template="actFiles/test_act.cfm">
 
 	<cfinclude template="dspFiles/test_dsp.cfm">
-
-	<script type="text/javascript">
-	$(function() {
-		$( "#tabs" ).tabs();
-	});
-</script>
 </body>
 
 <!--- フッター --->
