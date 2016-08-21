@@ -1,4 +1,3 @@
-
 <div id="tabs">
 	<ul>
  		<li><a href="#tabs-1">Tab1</a></li>

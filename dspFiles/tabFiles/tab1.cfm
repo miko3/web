@@ -2,7 +2,7 @@
 	<table class="table table-striped tableTab1">
 		<thead class="thead-inverse">
 			<tr>
-				<td  id="checkAll">
+				<td  id="checkAllTab1">
 					<input type="checkbox">
   				</td>
 				<td>id</td>

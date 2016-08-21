@@ -12,14 +12,18 @@
 	</cffunction>
 
 	<!--- 項目を更新する --->
-	<cffunction name="updState" returnformat="json" access="remote" >
-		<cfargument name="id" type="numeric" required="true">
+	<cffunction name="updState" returntype="boolean" access="remote" >
+		<cfargument name="id" type="array" required="true">
 		<cfargument name="state" type="numeric" required="true">
-		<cfquery name="updQ" datasource="testdb">
-			UPDATE flowstate
-			       SET state = <cfqueryparam value="#state#" cfsqltype="cf_sql_integer">
-			 WHERE id = <cfqueryparam value="#id#" cfsqltype="cf_sql_integer">
-		</cfquery>
+
+		<cfloop index="i" from="1" to="#ArrayLen(id)#">
+			<cfquery name="updQ" datasource="testdb">
+				UPDATE flowstate
+				       SET state = <cfqueryparam value="#state#" cfsqltype="cf_sql_integer">
+				 WHERE id = "#id[i]#";
+			</cfquery>
+		</cfloop>
+
 		<cfreturn true>
 	</cffunction>
 
