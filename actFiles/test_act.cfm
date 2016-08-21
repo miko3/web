@@ -30,7 +30,7 @@
 
 
 	var updQryResult = function(result){
-		console.log(result);
+		// console.log(result);
 	}
 
 	var updQryFault = function(result){

@@ -1,32 +1,17 @@
 
-<div class="container">
-	<div class="col-sm-4" id="tab1">tab1</div>
-	<div class="col-sm-4" id="tab2">tab2</div>
-	<div class="col-sm-4" id="tab3">tab3</div>
-</div>
-
-<div class="container">
-	<form>
-	<table class="table table-striped">
-		<thead class="thead-inverse">
-			<tr>
-				<td  id="checkAll">
-					<input type="checkbox">
-  				</td>
-				<td>id</td>
-				<td>name</td>
-				<td>state</td>
-			</tr>
-		</thead>
-		<tbody id="dispTable">
-
-			<script type="text/javascript">
-				getQry();
-			</script>
-
-		</tbody>
-	</table>
-
-	<button type="button" class="btn btn-success" onclick="updQry()">Update</button>
-	</form>
-</div>
+<div id="tabs">
+	<ul>
+ 		<li><a href="#tabs-1">Tab1</a></li>
+    		<li><a href="#tabs-2">Tab2</a></li>
+    		<li><a href="#tabs-3">Tab3</a></li>
+  	</ul>
+  	<div id="tabs-1">
+  		<cfinclude template="../tabFiles/tab1.cfm">
+  	</div>
+  	<div id="tabs-2">
+  		<p>afasf</p>
+  	</div>
+  	<div id="tabs-3">
+  		<p>afasf</p>
+ 	</div>
+ </div>
