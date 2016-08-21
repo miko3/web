@@ -1,4 +1,5 @@
 <cfcomponent>
+	<!--- テーブルからレコードを取得する --->
 	<cffunction name="getState" returnformat="json" access="remote">
 		<cfquery name="getQ" datasource="testdb">
 			SELECT id, name, state
@@ -8,6 +9,7 @@
 		<cfdump var="#getQ#">
 	</cffunction>
 
+	<!--- 項目を更新する --->
 	<cffunction name="updState" returnformat="json" access="remote" >
 		<cfargument name="id" type="numeric" required="true">
 		<cfargument name="state" type="numeric" required="true">

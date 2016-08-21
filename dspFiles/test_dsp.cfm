@@ -1,8 +1,8 @@
 
 <div class="container">
-	<div class="col-sm-4">tab1</div>
-	<div class="col-sm-4">tab2</div>
-	<div class="col-sm-4">tab3</div>
+	<div class="col-sm-4" id="tab1">tab1</div>
+	<div class="col-sm-4" id="tab2">tab2</div>
+	<div class="col-sm-4" id="tab3">tab3</div>
 </div>
 
 <div class="container">

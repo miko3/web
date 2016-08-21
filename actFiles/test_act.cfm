@@ -11,7 +11,7 @@
 		q.setCallbackHandler(getQryResult);
 		//非同期呼び出し失敗時のコールバック関数設定
 		q.setErrorHandler(getQryFault);
-		//プロキシから、User.cfcのgetName関数を呼び出す
+		//プロキシから、test_qry.cfcのgetName関数を呼び出す
 		q.getState();
 	} 
 
@@ -22,11 +22,12 @@
 		q.setCallbackHandler(updQryResult);
 		//非同期呼び出し失敗時のコールバック関数設定
 		q.setErrorHandler(updQryFault);
-		//プロキシから、User.cfcのgetName関数を呼び出す
+		//プロキシから、test_qry.cfcのgetName関数を呼び出す
 		
-
+		// 試し
 		q.updState(1,1);
 	} 
+
 
 	var updQryResult = function(result){
 		console.log(result);
