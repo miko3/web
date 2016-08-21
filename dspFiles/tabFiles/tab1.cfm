@@ -14,5 +14,5 @@
 		</tbody>
 	</table>
 
-	<button type="button" class="btn btn-success" onclick="updQry()">Update</button>
+	<button type="button" class="btn btn-success" onclick="updQry(1,1)">Update</button>
 </form>

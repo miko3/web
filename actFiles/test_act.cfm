@@ -14,7 +14,7 @@
 		q.getState(state);
 	} 
 
-	var updQry = function(){
+	var updQry = function(state, tabNum){
 		// プロキシのインスタンスを作成します。 
 		var q = new Qry();
 		//非同期呼び出し成功時のコールバック関数設定
@@ -23,15 +23,15 @@
 		q.setErrorHandler(updQryFault);
 		//プロキシから、test_qry.cfcのgetName関数を呼び出す
 		
-		var updTargetNum = getTableRecords();
+		var updTargetNum = getTableRecords(tabNum);
 
 		// 試し
-		q.updState(updTargetNum, 1);
+		q.updState(updTargetNum, state);
 	} 
 
-	function getTableRecords()
+	function getTableRecords(tabNum)
 	{
-		var chkRec=$("input.checkStateTab1:checked").parents("tr");
+		var chkRec=$("input.checkStateTab" + tabNum +":checked").parents("tr");
 		var updTargetNum  = new Array(chkRec.length);
 
 		for(i=0;i<chkRec.length;i++){
